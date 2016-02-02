@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Mobiroster - Register</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<link rel="author" href="https://www.paperclipinnovations.com"/>
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+    </head>
+    <body class="loaded">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+       	
+       	<main class="register-conatiner">
+		    
+		    <section id="slide-2" class="homeSlide">
+		    	
+		    	<div class="r">
+			    	<div class="hsContainer">
+				    	<div class="hsContent">
+				    		<h2>Register Now</h2>
+				    		<form method="post" >
+				    			<div id="form-validation-error"><div class="error-icon"></div><div id="error-message">Error</div></div>
+					    		<input type="email" id="reg_email" placeholder="Email" required autocomplete autofocus/>
+								<div id="same-row">
+									<input type="text" id="reg_firstname" placeholder="Firstname" required autocomplete/>
+									<!--<input type="text" id="reg_middlename" placeholder="Middlename" />-->
+									<input type="text" id="reg_lastname" style="float: right;" placeholder="Lastname" autocomplete/>
+								</div>
+								<div style="clear: both;"></div>
+								<hr/>
+								<input type="text" id="reg_company_name" placeholder="Company Name" required autocomplete/>
+								<input type="text" id="reg_abn" placeholder="Company ABN" required autocomplete/>
+								<div>
+									<select class="dropdown-arrow"  id="reg_timezone">
+										<option selected>Select your timezone</option>
+										<option>Australia/Melbourne</option>
+										<option>Australia/Perth</option>
+									</select>
+									<div class="triangle"></div>
+								</div>
+								<div id="reg_schedule_type">
+									<div class="frame-header">Rosters are scheduled</div>
+									<div style="clear: both;"></div>
+									<input type="radio" name="reg_schedule_type" value="0" checked />Weekly
+									<input type="radio" name="reg_schedule_type" value="1" />Fortnightly
+									<input type="radio" name="reg_schedule_type" value="2" />Monthly
+								</div>
+								
+								<!--<div id="optional-register">
+									<input type="text" name="reg_logo" placeholder="LOGO" required />
+									<input type="text" name="reg_week_starts_on" placeholder="Week Starts On" required />
+									<input type="text" name="reg_sunday_payrate" placeholder="Sunday Payrate" required />
+									<input type="text" name="reg_saturday_payrate" placeholder="Saturday Payrate" required />
+									<input type="time" name="reg_work_start" placeholder="Worrking Hours Start" required />
+									<input type="time" name="reg_work_end" placeholder="Working Hours End" required />
+									<input type="text" name="reg_payslip_format" placeholder="Payslip Format" required />
+									<input type="text" name="reg_roster_breaks" placeholder="Roster Breaks" required />
+								</div>-->
+								<hr/>
+								<input type="text" id="reg_stores" placeholder="Stores (Eg: Front, Kitchen, Staff)"/>
+								<div class="help-message">Eg: Front, Kitchen, Staff</div>
+								<ul id="store-list">
+									<!--<li><div class="store-name">Store 1</div><div class="delete-store"></div></li>-->
+								</ul>
+								<input id="new_company" type="submit" value="Send" />
+								<div style="clear: both;"></div>
+							</form>
+							<footer><span id="siteseal"><script type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=HjhL6l2PSeRYrjdP1vQZnPCQ3SU0dQ00qZMhHAHM6iqbhrz8POp8ax9"></script></span></footer>
+			    		</div>
+			    	</div>
+		    	</div>
+		    </section>
+		    
+		    
+		</main>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="js/imagesloaded.js"></script>
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/skrollr.js"></script>
+        <script src="js/register.js"></script>
+    </body>
+</html>
