@@ -140,7 +140,7 @@ $(".navbar-nav li a").click(function(event) {
 
 $('#slide-6 .hsContent .dropdown-menu li a').on('click',function(e){
 	e.preventDefault();
-	console.log($(this).text());
+	// console.log($(this).text());
 	
 	/*$('.subject-button').find('span.change').text($(this).text()).css({
 		
@@ -153,7 +153,7 @@ $('#slide-6 .hsContent .dropdown-menu li a').on('click',function(e){
 	*/
 	
 	
-	
+	$("#contact_subject").val($(this).text());
 	if($('div.dropdown').width()>380)
 	{
 		if($(this).text().length>12){
@@ -200,13 +200,13 @@ $(window).on('scroll',function(){
 	var windowTop = $(this).scrollTop();
     
     if($(this).scrollTop() >= $('#t_Contact_Us').offset().top){
-           console.log('true');
+           // console.log('true');
            if(!($($('.navbar-nav').find('li')[4]).hasClass('active'))){
             $('.navbar-nav').find('li').removeClass('active');
             $($('.navbar-nav').find('li')[4]).addClass('active');
            }
     } else if(windowTop >= $('#t_partners_fo').offset().top){
-           console.log('true');
+           // console.log('true');
            if(!($($('.navbar-nav').find('li')[1]).hasClass('active'))){
             $('.navbar-nav').find('li').removeClass('active');
             $($('.navbar-nav').find('li')[1]).addClass('active');
